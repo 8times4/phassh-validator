@@ -51,6 +51,7 @@ See [here](https://stackoverflow.com/questions/13052047/python-crypt-in-osx) for
  
 ## ToDo:
 Add some properly formatted zxcvbn output to validate complexity properly.
+Avoid disclosing characters in cli.
 
 ## Why?
 
