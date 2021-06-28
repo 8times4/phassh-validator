@@ -1,4 +1,5 @@
 import crypt 
+import getpass
 
 class Password:
     def __init__(self, password):
@@ -25,11 +26,13 @@ class Password:
 
 
 if __name__ == '__main__':
-    input_password = input('Insert Password: ')
-    input_password2 = input('Repeat Password: ')
+    input_password = getpass.getpass('Insert Password: ')
+    input_password2 = getpass.getpass('Repeat Password: ')
     p = Password(input_password)
     if p.validate() is True:
         if p.compare(input_password2) is True:
             print('Your SHA-512 password hash is:',crypt.crypt(input_password2, crypt.mksalt(crypt.METHOD_SHA512)))
+        else: 
+            print('Passwords do not match, please try again.')
     else:
        print(p.validate())

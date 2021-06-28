@@ -26,8 +26,8 @@ then enter your password twice, and you'll get your hash.
 Example:
 ```bash
 % docker run --rm -it 8times4/phassh-validator:latest
-Insert Password: BoredApeYachtClub420@
-Repeat Password: BoredApeYachtClub420@
+Insert Password: 
+Repeat Password: 
 Your SHA-512 password hash is: $6$sCTugqKLcd33Q5gK$daUWUfRD/qD/MyMValJ./pHhUYraDOWQxeoiAgjciLDwFKlAdBRuJJGGwQwdsntqz7IdbebTC5gAGYnUU9/bP0
 ```
 
@@ -40,8 +40,8 @@ then enter your password twice, and you'll get your hash.
 Example:
 ```bash
 % python3 validator.py                       
-Insert Password: BoredApeYachtClub420@
-Repeat Password: BoredApeYachtClub420@
+Insert Password: 
+Repeat Password: 
 Your SHA-512 password hash is: $6Ykwgs.yHIpQ
 ```
 ### FYI
@@ -51,7 +51,6 @@ See [here](https://stackoverflow.com/questions/13052047/python-crypt-in-osx) for
  
 ## ToDo:
 Add some properly formatted zxcvbn output to validate complexity properly.
-Avoid disclosing characters in cli.
 
 ## Why?
 
