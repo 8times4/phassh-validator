@@ -19,9 +19,17 @@ must be used.
 
 Docker:
 ```bash
-docker run --rm -it 8times4:validator
+docker run --rm -it 8times4/phassh-validator:latest
 ```
 then enter your password twice, and you'll get your hash. 
+
+Example:
+```bash
+% docker run --rm -it 8times4/phassh-validator:latest
+Insert Password: BoredApeYachtClub420@
+Repeat Password: BoredApeYachtClub420@
+Your SHA-512 password hash is: $6$sCTugqKLcd33Q5gK$daUWUfRD/qD/MyMValJ./pHhUYraDOWQxeoiAgjciLDwFKlAdBRuJJGGwQwdsntqz7IdbebTC5gAGYnUU9/bP0
+```
 
 Python:
 ```python3
@@ -29,6 +37,17 @@ python3 validator.py
 ```
 then enter your password twice, and you'll get your hash.
 
+Example:
+```bash
+% python3 validator.py                       
+Insert Password: BoredApeYachtClub420@
+Repeat Password: BoredApeYachtClub420@
+Your SHA-512 password hash is: $6Ykwgs.yHIpQ
+```
+### FYI
+Your hash can look different based on your operating system, however it's still just as secure.
+
+See [here](https://stackoverflow.com/questions/13052047/python-crypt-in-osx) for more info.
  
 ## ToDo:
 Add some properly formatted zxcvbn output to validate complexity properly.
