@@ -5,12 +5,12 @@ phassh-validator is password complexity validator with a password hashing elemen
 
 The current setting validates the following criterias before hashing the provided password: 
 
-At least, 
+At least 12 characters, including: 
 
-- 1x special character
-- 1x uppercase letter
-- 1x lowercase letter
-- 1x number
+- 1x special character,
+- 1x uppercase letter,
+- 1x lowercase letter,
+- 1x number,
 
 must be used.
 
